@@ -1,0 +1,42 @@
+{
+  "id": 2,
+  "title": "不是吧不是吧？不会还有人不知道无参方法是什么吧？",
+  "summary": " ",
+  "picture": "",
+  "content": "## java学习之路\n\n\n\n\n@[TOC](文章目录)\n\n</font>\n\n<hr style=\" border:solid; width:100px; height:1px;\" color=#000000 size=1\">\n\n# 前言\n\n<font color=#999AAA >快速学习java之路第二周</font>\n\n<hr style=\" border:solid; width:100px; height:1px;\" color=#000000 size=1\">\n\n<font color=#999AAA >提示：以下是本篇文章正文内容，下面案例可供参考\n\n# 一、类\n类的属性：对象所拥有的静态特征在类中表示时称为类的属性。\n类的方法：对象执行的操作称为类的方法。\n\n\n\nJava的类模板：\n```java\npublic class <类名>{\t//定义类名\n    //定义属性部分\n    属性1的类型 属性1;\n    属性2的类型 属性2;\n   \t......\n    属性n的类型 属性n;\n    //定义方法部分\n    方法1;\n    方法2;\n    ......\n    方法n;\n}\n```\n\n# 二、类的无参方法是什么\n\n<font color=#999AAA >无参方法就是没有参数的方法，是一种没有参数、没有返回值的一种方法体写在类中。\n\n\n下面写一个简单的例子来演示一下：\n```java\npublic class School(){\n\tString stuname=\"张三\";\t\t//学生姓名\n\tString stuclass=\"软件二班\";\t//学生班级\n\tint stuage=\"19\";\t\t\t//学生年龄\n\tpublic void show(){\n\t\tsystem.out.println(\"学生姓名为：\"+stuname+\"学生班级为：\"+stuclass+\"学生年龄为：\"+stuage)\n\t}\n}\n```\n上面是写在School类中的一个show方法，下面引用一下方法。\n\n```java\npublic class Student(){\n\tpublic static void main(String[] args) {\n\t\tSchool ss=new School();  //调用类\n\t\tss.show;\t\t\t\t //调用类中的show方法\n\t}\n}\n```\n运行结果为：\n<font color=#CD000>**学生姓名为：张三学生班级为：软件二班学生年龄为：19**</font>\n\n\n\n# 总结\n无参方法是java编程中的一种广泛应用的方法，这种方法有很多好处\n<font color=##CD000 >\n1-将解决问题的方法与主函数代码分开，逻辑更清晰，代码可读性更强。\n<font color=##CD000 >\n2-若方法出错，则程序可以缩小为只在该方法中查找错误，使代码更容易调试。\n<font color=##CD000 >\n3-方法是解决一类问题的抽象，一旦写成功就可以重复使用。</font >\n<font color=#999AAA >",
+  "categoryId": 1,
+  "categoryName": "测试",
+  "userId": 1,
+  "author": "管理员",
+  "authorAvatar": "default.jpg",
+  "authorProfile": "这个人很懒，什么都没有",
+  "createTime": "2023-11-07T22:30:47",
+  "updateTime": "2023-12-18T22:41:14",
+  "source": 1,
+  "sourceUrl": null,
+  "tags": [
+    {
+      "id": 1,
+      "name": "自测"
+    },
+    {
+      "id": 2,
+      "name": "后端"
+    },
+    {
+      "id": 3,
+      "name": "新手"
+    },
+    {
+      "id": 4,
+      "name": "入门"
+    },
+    {
+      "id": 5,
+      "name": "教程"
+    }
+  ],
+  "likeCount": 0,
+  "commentCount": 0,
+  "liked": false
+}

@@ -1,0 +1,199 @@
+{
+  "sections": [
+    {
+      "type": 1,
+      "title": "今日推荐",
+      "articles": [
+        {
+          "id": 2,
+          "title": "不是吧不是吧？不会还有人不知道无参方法是什么吧？",
+          "summary": " ",
+          "picture": "",
+          "categoryId": 1,
+          "categoryName": "测试",
+          "userId": 1,
+          "author": "管理员",
+          "authorAvatar": "default.jpg",
+          "createTime": "2023-11-07T22:30:47",
+          "updateTime": "2023-12-18T22:41:14",
+          "status": 1
+        },
+        {
+          "id": 3,
+          "title": "人生第一行Hello Word！——MySQL数据库的初学之旅",
+          "summary": " ",
+          "picture": "",
+          "categoryId": 1,
+          "categoryName": "测试",
+          "userId": 1,
+          "author": "管理员",
+          "authorAvatar": "default.jpg",
+          "createTime": "2023-11-07T22:34:24",
+          "updateTime": "2023-12-18T22:41:17",
+          "status": 1
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "最新发布",
+      "articles": [
+        {
+          "id": 2,
+          "title": "不是吧不是吧？不会还有人不知道无参方法是什么吧？",
+          "summary": " ",
+          "picture": "",
+          "categoryId": 1,
+          "categoryName": "测试",
+          "userId": 1,
+          "author": "管理员",
+          "authorAvatar": "default.jpg",
+          "createTime": "2023-11-07T22:30:47",
+          "updateTime": "2023-12-18T22:41:14",
+          "status": 1
+        },
+        {
+          "id": 3,
+          "title": "人生第一行Hello Word！——MySQL数据库的初学之旅",
+          "summary": " ",
+          "picture": "",
+          "categoryId": 1,
+          "categoryName": "测试",
+          "userId": 1,
+          "author": "管理员",
+          "authorAvatar": "default.jpg",
+          "createTime": "2023-11-07T22:34:24",
+          "updateTime": "2023-12-18T22:41:17",
+          "status": 1
+        }
+      ]
+    }
+  ],
+  "latest": [
+    {
+      "id": 867304775,
+      "title": "OrangeBlog 2.0：技术栈、项目组成与功能实现",
+      "summary": "完整记录这个博客系统用了什么、由什么组成、能做什么，以及真实跑通时修复的问题。",
+      "picture": "b698f37b461c97a5.png",
+      "categoryId": 3,
+      "categoryName": "后端",
+      "userId": 21,
+      "author": "橙子写手",
+      "authorAvatar": "0092828058513654.png",
+      "createTime": "2026-09-20T22:30:16",
+      "updateTime": "2026-09-20T22:30:16",
+      "status": 1
+    },
+    {
+      "id": 3,
+      "title": "人生第一行Hello Word！——MySQL数据库的初学之旅",
+      "summary": " ",
+      "picture": "",
+      "categoryId": 1,
+      "categoryName": "测试",
+      "userId": 1,
+      "author": "管理员",
+      "authorAvatar": "default.jpg",
+      "createTime": "2023-11-07T22:34:24",
+      "updateTime": "2023-12-18T22:41:17",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "title": "不是吧不是吧？不会还有人不知道无参方法是什么吧？",
+      "summary": " ",
+      "picture": "",
+      "categoryId": 1,
+      "categoryName": "测试",
+      "userId": 1,
+      "author": "管理员",
+      "authorAvatar": "default.jpg",
+      "createTime": "2023-11-07T22:30:47",
+      "updateTime": "2023-12-18T22:41:14",
+      "status": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "测试",
+      "articleCount": 2
+    },
+    {
+      "id": 2,
+      "name": "前端",
+      "articleCount": 0
+    },
+    {
+      "id": 3,
+      "name": "后端",
+      "articleCount": 1
+    },
+    {
+      "id": 4,
+      "name": "经验",
+      "articleCount": 0
+    },
+    {
+      "id": 5,
+      "name": "考研",
+      "articleCount": 0
+    },
+    {
+      "id": 6,
+      "name": "考公",
+      "articleCount": 0
+    },
+    {
+      "id": 7,
+      "name": "大数据",
+      "articleCount": 0
+    },
+    {
+      "id": 8,
+      "name": "人工智能",
+      "articleCount": 0
+    },
+    {
+      "id": 9,
+      "name": "AI",
+      "articleCount": 0
+    },
+    {
+      "id": 10,
+      "name": "嵌入式",
+      "articleCount": 0
+    },
+    {
+      "id": 11,
+      "name": "新手入门",
+      "articleCount": 0
+    }
+  ],
+  "hotTags": [
+    {
+      "id": 1,
+      "name": "自测"
+    },
+    {
+      "id": 2,
+      "name": "后端"
+    },
+    {
+      "id": 3,
+      "name": "新手"
+    },
+    {
+      "id": 5,
+      "name": "教程"
+    },
+    {
+      "id": 4,
+      "name": "入门"
+    },
+    {
+      "id": 6,
+      "name": "个人博客"
+    }
+  ]
+}

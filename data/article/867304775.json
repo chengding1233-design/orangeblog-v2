@@ -1,0 +1,34 @@
+{
+  "id": 867304775,
+  "title": "OrangeBlog 2.0：技术栈、项目组成与功能实现",
+  "summary": "完整记录这个博客系统用了什么、由什么组成、能做什么，以及真实跑通时修复的问题。",
+  "picture": "b698f37b461c97a5.png",
+  "content": "# OrangeBlog 2.0：技术栈、项目组成与功能实现\n\n> 这篇文章由博客系统自己发布，用来记录它\"是什么、用了什么、能做什么\"，以及我在真实跑通它时发现并修复的问题。\n\n## 一、这是什么\n\nOrangeBlog 2.0 是一个前后端分离的个人博客系统：Spring Boot 3 提供接口并托管前端静态资源，Vue 3 负责页面渲染，MySQL 存数据。旧版（橙子博客）的历史数据被完整保留，所以它既能管理新文章，也能继续展示 2023 年的老文章。\n\n## 二、技术栈\n\n| 层次 | 选型 |\n| --- | --- |\n| 后端框架 | Spring Boot 3.2.5 / JDK 17 |\n| 数据访问 | MyBatis-Plus 3.5.5（逻辑删除 + 分页插件） |\n| 数据库 | MySQL 8+（本项目跑在 9.1） |\n| 认证 | JWT（jjwt 0.12.5）+ BCrypt，兼容旧数据的加盐 MD5 |\n| 邮件 | Spring Mail，注册验证码支持开发模式 |\n| 前端框架 | Vue 3.5 + Vite 5 |\n| UI 与状态 | Element Plus 2.8.8、Pinia 2.3、Vue Router 4.5 |\n| 编辑器 | md-editor-v3（写作与渲染共用一套 Markdown） |\n\n## 三、项目组成\n\n```\norangeblog-v2/\n├── backend/     Spring Boot 接口层 + 静态资源托管\n├── frontend/    Vue 3 单页应用\n├── database/    建库建表 + 种子数据\n├── tools/       端到端冒烟测试脚本\n├── runtime/     运行期文件（上传图片、日志）\n└── start.bat / stop.bat\n```\n\n后端按 controller → service → mapper 分层，配套 entity / vo / dto / config / security / common；前端按 views / components / utils 组织。\n\n## 四、已实现的功能\n\n### 1. 首页聚合\n\n推荐位分区（今日推荐、热门文章、最新发布、编辑精选）、最新文章、分类统计、热门标签，一次 `/api/home` 全部返回。\n\n### 2. 文章列表\n\n标题模糊搜索、按分类筛选、按标签筛选、分页浏览。\n\n### 3. 文章详情\n\nMarkdown 渲染与代码高亮、作者信息、标签、点赞数、评论数、原文链接（转载场景）。\n\n### 4. 写作\n\nMarkdown 编辑器、封面图上传、正文插图上传、存草稿与发布、编辑文章（正文按版本号留档）。\n\n### 5. 评论与回复\n\n两级评论结构：顶级评论与子评论，支持对评论回复。\n\n### 6. 点赞\n\n登录后可点赞与取消，详情接口会返回\"当前用户是否已点赞\"。\n\n### 7. 个人主页\n\n展示用户信息与该用户的文章；草稿只有作者本人可见。\n\n### 8. 注册登录\n\n邮箱验证码注册、JWT 登录（默认 72 小时）、401 自动登出并弹出登录框。\n\n## 五、请求链路\n\n`JwtInterceptor` 拦截 `/api/**`，从 `Authorization` 头解析 token 并写入 ThreadLocal 中的 `UserContext`；业务层用 `UserContext.require()` 声明式地要求登录；异常统一由 `GlobalExceptionHandler` 收敛成 `{code,msg,data}` 结构。前端 axios 拦截器按 `code !== 0` 判错，401 自动清理登录态。\n\n## 六、数据库\n\n共 10 张表：`article`、`article_detail`（正文与版本）、`category`、`tag`、`article_tag`、`comment`、`like`、`recommended`、`user_info`、`user_foot`。\n\n## 七、真实跑通时发现并修复的问题\n\n| 问题 | 现象 | 修复 |\n| --- | --- | --- |\n| 逻辑删除失效 | 删除文章后文章仍然可见；编辑文章后旧标签越积越多 | 改用 `deleteById` / `delete(wrapper)` 触发 MyBatis-Plus 逻辑删除 |\n| 草稿泄露 | 未发布文章匿名可读，且在个人主页公开 | 详情与主页按作者身份过滤 |\n| 评论回复错乱 | 点\"回复\"会把父评论内容当成新评论再发一遍 | 前端记录回复目标，提交时携带父评论 id |\n| 推荐位顺序失效 | 首页分区按文章 id 倒序而不是推荐位顺序 | 按 `recommended` 表录入顺序输出 |\n| 路径写死 | 上传目录、前端目录指向开发机绝对路径 | 改为配置项，支持环境变量覆盖 |\n\n## 八、后续可以做的升级\n\nRedis 缓存热点文章与点赞计数、评论点赞、评论分页、对象存储接管图片、容器化部署与滚动发版。\n\n---\n\n写于 OrangeBlog 2.0 真实运行环境。\n\n> 补充：本文封面图由程序生成，正文插图通过 /api/upload 上传。",
+  "categoryId": 3,
+  "categoryName": "后端",
+  "userId": 21,
+  "author": "橙子写手",
+  "authorAvatar": "0092828058513654.png",
+  "authorProfile": "用 Spring Boot + Vue 折腾了一个博客，这里记录踩坑过程。",
+  "createTime": "2026-09-20T22:30:16",
+  "updateTime": "2026-09-20T22:30:16",
+  "source": 1,
+  "sourceUrl": "",
+  "tags": [
+    {
+      "id": 2,
+      "name": "后端"
+    },
+    {
+      "id": 5,
+      "name": "教程"
+    },
+    {
+      "id": 6,
+      "name": "个人博客"
+    }
+  ],
+  "likeCount": 2,
+  "commentCount": 3,
+  "liked": false
+}

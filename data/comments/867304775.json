@@ -1,0 +1,35 @@
+[
+  {
+    "id": 74,
+    "articleId": 867304775,
+    "parentId": 0,
+    "content": "文章结构很完整，技术栈和功能都对得上，收藏了。",
+    "userId": 21,
+    "author": "橙子写手",
+    "authorAvatar": "0092828058513654.png",
+    "createTime": "2026-09-20T22:30:56",
+    "children": []
+  },
+  {
+    "id": 75,
+    "articleId": 867304775,
+    "parentId": 74,
+    "content": "谢谢！后续我打算把点赞和评论也加上缓存。",
+    "userId": 21,
+    "author": "橙子写手",
+    "authorAvatar": "0092828058513654.png",
+    "createTime": "2026-09-20T22:31:03",
+    "children": []
+  },
+  {
+    "id": 76,
+    "articleId": 867304775,
+    "parentId": 0,
+    "content": "作为这个博客的老用户，看到 2.0 重构版很惊喜。",
+    "userId": 1,
+    "author": "管理员",
+    "authorAvatar": "default.jpg",
+    "createTime": "2026-09-20T22:31:33",
+    "children": []
+  }
+]

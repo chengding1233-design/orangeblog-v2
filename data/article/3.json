@@ -1,0 +1,21 @@
+{
+  "id": 3,
+  "title": "人生第一行Hello Word！——MySQL数据库的初学之旅",
+  "summary": " ",
+  "picture": "",
+  "content": "# Hello Word！\n<font color=#999AAA >没想到吧 数据库的第一行代码竟然是Hello Word!\n<hr style=\" border:solid; width:100px; height:1px;\" color=#000000 size=1\">\n\n\n<font color=#999AAA >提示：写完文章后，目录可以自动生成，如何生成可参考右边的帮助文档\n\n@[TOC](文章目录)\n\n</font>\n\n<hr style=\" border:solid; width:100px; height:1px;\" color=#000000 size=1\">\n\n# 前言\n\n<font color=#999AAA >提示：这里可以添加本文要记录的大概内容：\n例如：随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。</font>\n\n<hr style=\" border:solid; width:100px; height:1px;\" color=#000000 size=1\">\n\n<font color=#999AAA >提示：以下是本篇文章正文内容，下面案例可供参考\n\n# 一、pandas是什么？\n\n\n<font color=#999AAA >示例：pandas 是基于NumPy 的一种工具，该工具是为了解决数据分析任务而创建的。\n\n\n\n# 二、使用步骤\n## 1.引入库\n\n\n<font color=#999AAA >代码如下（示例）：\n\n\n\n```c\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport warnings\nwarnings.filterwarnings('ignore')\nimport  ssl\nssl._create_default_https_context = ssl._create_unverified_context\n```\n\n## 2.读入数据\n\n<font color=#999AAA >代码如下（示例）：\n\n\n\n```c\ndata = pd.read_csv(\n    'https://labfile.oss.aliyuncs.com/courses/1283/adult.data.csv')\nprint(data.head())\n```\n\n\n\n<font color=#999AAA >该处使用的url网络请求的数据。\n\n<hr style=\" border:solid; width:100px; height:1px;\" color=#000000 size=1\">\n\n# 总结\n<font color=#999AAA >提示：这里对文章进行总结：\n例如：以上就是今天要讲的内容，本文仅仅简单介绍了pandas的使用，而pandas提供了大量能使我们快速便捷地处理数据的函数和方法。\n",
+  "categoryId": 1,
+  "categoryName": "测试",
+  "userId": 1,
+  "author": "管理员",
+  "authorAvatar": "default.jpg",
+  "authorProfile": "这个人很懒，什么都没有",
+  "createTime": "2023-11-07T22:34:24",
+  "updateTime": "2023-12-18T22:41:17",
+  "source": 1,
+  "sourceUrl": null,
+  "tags": [],
+  "likeCount": 0,
+  "commentCount": 0,
+  "liked": false
+}

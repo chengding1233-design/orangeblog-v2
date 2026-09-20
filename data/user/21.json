@@ -1,0 +1,27 @@
+{
+  "user": {
+    "id": 21,
+    "username": "orangewriter",
+    "personName": "橙子写手",
+    "profile": "用 Spring Boot + Vue 折腾了一个博客，这里记录踩坑过程。",
+    "email": null,
+    "headPhoto": "0092828058513654.png",
+    "type": 1
+  },
+  "articles": [
+    {
+      "id": 867304775,
+      "title": "OrangeBlog 2.0：技术栈、项目组成与功能实现",
+      "summary": "完整记录这个博客系统用了什么、由什么组成、能做什么，以及真实跑通时修复的问题。",
+      "picture": "b698f37b461c97a5.png",
+      "categoryId": 3,
+      "categoryName": "后端",
+      "userId": 21,
+      "author": "橙子写手",
+      "authorAvatar": "0092828058513654.png",
+      "createTime": "2026-09-20T22:30:16",
+      "updateTime": "2026-09-20T22:30:16",
+      "status": 1
+    }
+  ]
+}

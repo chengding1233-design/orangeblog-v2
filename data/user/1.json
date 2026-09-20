@@ -1,0 +1,41 @@
+{
+  "user": {
+    "id": 1,
+    "username": "admin",
+    "personName": "管理员",
+    "profile": "这个人很懒，什么都没有",
+    "email": null,
+    "headPhoto": "default.jpg",
+    "type": 1
+  },
+  "articles": [
+    {
+      "id": 3,
+      "title": "人生第一行Hello Word！——MySQL数据库的初学之旅",
+      "summary": " ",
+      "picture": "",
+      "categoryId": 1,
+      "categoryName": "测试",
+      "userId": 1,
+      "author": "管理员",
+      "authorAvatar": "default.jpg",
+      "createTime": "2023-11-07T22:34:24",
+      "updateTime": "2023-12-18T22:41:17",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "title": "不是吧不是吧？不会还有人不知道无参方法是什么吧？",
+      "summary": " ",
+      "picture": "",
+      "categoryId": 1,
+      "categoryName": "测试",
+      "userId": 1,
+      "author": "管理员",
+      "authorAvatar": "default.jpg",
+      "createTime": "2023-11-07T22:30:47",
+      "updateTime": "2023-12-18T22:41:14",
+      "status": 1
+    }
+  ]
+}
