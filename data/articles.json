@@ -1,5 +1,81 @@
 [
   {
+    "id": 867304799,
+    "title": "WebAPI、WebService、WebSocket：三种接口对接方式的取舍与踩坑",
+    "summary": "把三种接口放在一起对比，说说各自适用的场景、我踩过的坑，以及联调时固定不变的排查顺序。",
+    "picture": "2c7b89b82d1f9932.png",
+    "categoryId": 10,
+    "categoryName": "嵌入式",
+    "userId": 1,
+    "author": "管理员",
+    "authorAvatar": "default.jpg",
+    "createTime": "2026-09-25T22:12:16",
+    "updateTime": "2026-09-25T22:12:16",
+    "status": 1,
+    "tagIds": [
+      5,
+      10,
+      11
+    ]
+  },
+  {
+    "id": 867304800,
+    "title": "接口对接的工程化：让\"能通\"变成\"能长期稳定\"",
+    "summary": "幂等、重试退避、断网续传、日志链路、监控告警——这些不出现在需求文档里，却决定系统能不能活下来。",
+    "picture": "6b2bbf1910b88c70.png",
+    "categoryId": 3,
+    "categoryName": "后端",
+    "userId": 1,
+    "author": "管理员",
+    "authorAvatar": "default.jpg",
+    "createTime": "2026-09-25T22:12:16",
+    "updateTime": "2026-09-25T22:12:16",
+    "status": 1,
+    "tagIds": [
+      2,
+      6,
+      10
+    ]
+  },
+  {
+    "id": 867304797,
+    "title": "从 JSP 到 Spring Boot：一个传统 JavaWeb 出身的人，这些年是怎么迁移过来的",
+    "summary": "从 JSP + SSH 走到 Spring Boot，中间做了几年 C# 上位机。回头看，哪些东西彻底变了，哪些一点没变。",
+    "picture": "17b94252d449c8f7.png",
+    "categoryId": 3,
+    "categoryName": "后端",
+    "userId": 1,
+    "author": "管理员",
+    "authorAvatar": "default.jpg",
+    "createTime": "2026-09-25T22:12:15",
+    "updateTime": "2026-09-25T22:12:15",
+    "status": 1,
+    "tagIds": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "id": 867304798,
+    "title": "上位机程序部署实录：从\"在我电脑上好好的\"到现场稳定运行",
+    "summary": "十个现场高频坑、三种发布方式的取舍，以及我每次部署都会走一遍的清单和两分钟回滚办法。",
+    "picture": "188e6ffaa6ae56dd.png",
+    "categoryId": 4,
+    "categoryName": "经验",
+    "userId": 1,
+    "author": "管理员",
+    "authorAvatar": "default.jpg",
+    "createTime": "2026-09-25T22:12:15",
+    "updateTime": "2026-09-25T22:12:15",
+    "status": 1,
+    "tagIds": [
+      5,
+      8,
+      9
+    ]
+  },
+  {
     "id": 867304775,
     "title": "OrangeBlog 2.0：技术栈、项目组成与功能实现",
     "summary": "完整记录这个博客系统用了什么、由什么组成、能做什么，以及真实跑通时修复的问题。",
@@ -16,6 +92,23 @@
       2,
       5,
       6
+    ]
+  },
+  {
+    "id": 867304770,
+    "title": "1234",
+    "summary": "1234",
+    "picture": "eba2fa5a27dda1d2.jpg",
+    "categoryId": 1,
+    "categoryName": "测试",
+    "userId": 1,
+    "author": "管理员",
+    "authorAvatar": "default.jpg",
+    "createTime": "2023-12-13T00:21:56",
+    "updateTime": "2023-12-13T00:21:56",
+    "status": 1,
+    "tagIds": [
+      1
     ]
   },
   {

@@ -1,0 +1,26 @@
+{
+  "id": 867304770,
+  "title": "1234",
+  "summary": "1234",
+  "picture": "eba2fa5a27dda1d2.jpg",
+  "content": "---\n\n# 前言\n`提示：这里可以添加本文要记录的大概内容：`\n\n---\n\n`提示：以下是本篇文章正文内容，下面案例可供参考`\n\n# 一、java是什么？\n示例：ava 是一种广泛使用的、面向对象的、跨平台的编程语言。它最初由Sun Microsystems（后被Oracle收购）的James Gosling等人开发，并于1995年正式推出。\n\n# 二、使用步骤\n## 1.下载并配置环境\n\n## 2.hello world\n代码如下（示例）：\n```\npublic class First(){\n    public static void main(String[] args){\n        Syetem.out.println(\"helloword!\")\n    }\n}\n```\n\n---\n\n# 总结\n提示：这里对文章进行总结：\n例如：以上就是今天要讲的内容，本文仅仅简单介绍了Java的示例，而Java提供了很多常用工具库。\n                ",
+  "categoryId": 1,
+  "categoryName": "测试",
+  "userId": 1,
+  "author": "管理员",
+  "authorAvatar": "default.jpg",
+  "authorProfile": "这个人很懒，什么都没有",
+  "createTime": "2023-12-13T00:21:56",
+  "updateTime": "2023-12-13T00:21:56",
+  "source": 1,
+  "sourceUrl": null,
+  "tags": [
+    {
+      "id": 1,
+      "name": "自测"
+    }
+  ],
+  "likeCount": 0,
+  "commentCount": 0,
+  "liked": false
+}
